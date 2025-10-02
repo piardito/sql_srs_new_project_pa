@@ -99,6 +99,8 @@ if st.button("Reset"):
 with st.sidebar:
     st.dataframe(
         df[(df["Theme"] == Themes) & (df["NumeroQuestion"] == numero_questions)]
+        [["Theme","NumeroQuestion","Question","Tables","LastReviewed"]]
+
     )
 
 

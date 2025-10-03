@@ -25,8 +25,6 @@ else:
 
         try:
             # On utilise la connexion existante
-            df_users = conn.execute("SELECT id, email FROM users").df()
-            st.dataframe(df_users)
 
             if st.session_state.email:
                 st.markdown(f"### Utilisateur connecté : `{st.session_state.email}`")
